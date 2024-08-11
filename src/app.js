@@ -21,11 +21,10 @@ window.onload = function() {
   ];
   let symbols = ["♦", "♥", "♠", "♣"];
 
-  // Generar indices aleatorios para cada Array
+  // Generardor de indices aleatorios para cada Array
   let indexNumbers = Math.floor(Math.random() * numbers.length)
   let indexSymbols = Math.floor(Math.random() * symbols.length)
 
-  //Template literal
   let numberGenerator = `
     ${numbers[indexNumbers]}
   `
@@ -33,7 +32,6 @@ window.onload = function() {
     ${symbols[indexSymbols]}
   `
 
-  //Capturamos div e insertamos en HTML
   document.querySelector('#number').innerHTML = numberGenerator;
   document.querySelector('#symboltop').innerHTML = symbolGenerator;
   document.querySelector('#symbolbutton').innerHTML = symbolGenerator;
