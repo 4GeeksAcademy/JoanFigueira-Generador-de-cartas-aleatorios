@@ -2,8 +2,39 @@
 
 body {
   background: green;
+  
 }
 
-#card {
+#cards {
+  display: flex;
+  flex-direction: column;
   background: white;
+  -webkit-border-radius:15px;
+  margin: 15px 700px 15px 700px;
 }
+
+#number {
+  display: flex;
+  justify-content: center;
+  font-size: 200px;
+  padding: 60px 0px 60px 0px;
+  
+}
+
+#symboltop {
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  font-size: 150px;
+  -webkit-border-radius:15px;
+}
+
+#symbolbutton {
+  -webkit-border-radius:15px;
+  display: flex;
+  font-size: 150px;
+  justify-content: left;
+  padding-left: 15px;
+  transform: rotate(180deg);
+}
+
